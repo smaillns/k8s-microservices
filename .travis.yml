@@ -6,11 +6,13 @@ before_install:
 - chmod +x ./build-scripts/install-dependencies.sh
 - chmod +x ./build-scripts/deploy-terraform.sh
 - chmod +x ./build-scripts/inject-secrets.sh
+- chmod +x ./build-scripts/deploy-k8s.sh
 install:
 - "./build-scripts/install-dependencies.sh"
 - "./build-scripts/inject-secrets.sh"
 script:
 - "./build-scripts/deploy-terraform.sh"
+- “./build-scripts/deploy-k8s.sh”
 env:
   global:
     - secure: htgqdCK6OzIpFNDktmrLhwu/Y1MQWMTJQo4QiRr8M6RO45aOBfCUbHBIfbcZbe74xsEE/kJh4pCqMpK7IhYLLPpAlmOZMe+pLiHjpv6Q5s/muOw/GrS1e/OrfLQ01JS2POtsPeNuA8D2wEWl+y5U163GjpVcorbU//mufLRBO1UeMg1zVuuc7YWPmp/yhGCMlYkW+VuKlAAhnrIVFMk2rOXaQlPLhiwcj6VFD7ngE5lXnMHCxtYjv4LuisLGpCYMdX5ieJgkh+LRcQURmQA0ZlTcPltITy9Mfw/ceMcBIiCpoBNhwk47QZYIh4hlCET9Y8jpsceJpZusavwOAm4NDDCgGO4rJaiV1U9jj+Mif+fG9dwrK9iXTLGjUvLikWk8BpCMXPmYunM/b6iFnsnkVwJRCxmUNC5N0Xjc2cPDsujFNJ9SZndOY95iDBwxGjik8meyl08Lu+9oJXetENka1T8lmiIxN+H/0UrbZ3xHaZpaCAok9VVqcPBBJcwcuWYFqjzylxlpB9Tfk0izJr+Ab08BSlyntM1Z0CmZLBvHMeUw6pCtaIUETMvppWZyPngcpB7EmtTmm6jvEsWNwNF1nS9CRHSrFRcF1kUPkQBvU5pjBu65keA6K9+CqWVhxMv/FtQoJxXzcNpLtfueYd4wbkEzDqemDkYCwT4JiyNjT1c=
