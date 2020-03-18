@@ -28,4 +28,4 @@ echo "aws_secret_access_key = $AWS_SECRET_KEY" >> ~/.aws/credentials
 touch ~/.aws/config
 echo '[default]' >> ~/.aws/config
 echo "output = json">> ~/.aws/config
-echo "region = {your-aws-region}" >> ~/.aws/config
+echo "region = eu-west-3" >> ~/.aws/config
