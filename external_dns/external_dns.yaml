@@ -9,7 +9,7 @@ spec:
   template:
     metadata:
       annotations:
-        iam.amazonaws.com/role: arn:aws:iam::267225089714:role/nodes.udagramk8s.kops.ucci.uk
+        iam.amazonaws.com/role: arn:aws:iam::267225089714:role/external_dns_pod_role
       labels:
         app: external-dns
     spec:
