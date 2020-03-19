@@ -3,8 +3,8 @@ mkdir ~/.kube
 mv ./build-scripts/kubeconfig ~/.kube/config
  
 #decrypt the large secrets
-openssl aes-256-cbc -K $encrypted_8ff0da25ff85_key -iv $encrypted_8ff0da25ff85_iv -in large-secrets.txt.enc -out build-scripts/large-secrets.txt -d
- 
+openssl aes-256-cbc -K $encrypted_8ff0da25ff85_key -iv $encrypted_8ff0da25ff85_iv -in large-secrets.txt.enc -out build-scripts/large-secrets.txt -d 
+
 # run the script to get the secrets as environment variables
 source ./build-scripts/large-secrets.txt
 export $(cut -d= -f1 ./build-scripts/large-secrets.txt)
@@ -28,4 +28,4 @@ echo "aws_secret_access_key = $AWS_SECRET_KEY" >> ~/.aws/credentials
 touch ~/.aws/config
 echo '[default]' >> ~/.aws/config
 echo "output = json">> ~/.aws/config
-echo "region = eu-west-3" >> ~/.aws/config
+echo "region = us-east-1" >> ~/.aws/config
