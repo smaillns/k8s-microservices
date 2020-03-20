@@ -3,6 +3,8 @@ GREEN='\033[0;32m'
 NC='\033[0;0m'
 export PATH=$PATH:$(pwd)
 
+echo -e "Deploying a new Deployment object"
+for f in $(find ./ -name '*.yaml'); do kubectl apply -f $f --validate=false; done
 
 echo -e "${GREEN}==== Deploying RBAC role ====${NC}"
 cd ./rbac/
