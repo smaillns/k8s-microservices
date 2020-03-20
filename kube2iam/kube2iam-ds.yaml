@@ -8,7 +8,7 @@ metadata:
 spec:
   selector:
     matchLabels:
-      service: kube2iam
+      name: kube2iam
   template:
     metadata:
       labels:

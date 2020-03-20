@@ -8,7 +8,7 @@ spec:
     type: Recreate
   selector:
     matchLabels:
-      service: kube2iam
+      name: external-dns
   template:
     metadata:
       annotations:
