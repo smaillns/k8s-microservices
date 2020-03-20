@@ -25,5 +25,6 @@ spec:
         - --policy=upsert-only # would prevent ExternalDNS from deleting any records, omit to enable full synchronization
         - --registry=txt
         - --txt-owner-id=smail
+        command:
+        - /metrics-server
         - --kubelet-insecure-tls
-        
