@@ -11,6 +11,7 @@ export $(cut -d= -f1 ./build-scripts/large-secrets.txt)
  
  
 # Set kubernetes secrets
+echo -e "------************-----"
 echo -e $CERTIFICATE_AUTHORITY_DATA
 ./kubectl config set clusters.udagramk8s.kops.ucci.uk.certificate-authority-data $CERTIFICATE_AUTHORITY_DATA
 ./kubectl config set users.udagramk8s.kops.ucci.uk.client-certificate-data "$CLIENT_CERTIFICATE_DATA"
