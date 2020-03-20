@@ -4,7 +4,7 @@ NC='\033[0;0m'
 export PATH=$PATH:$(pwd)
 
 echo -e "Deploying a new Deployment object"
-kubectl apply -f backend-feed-deployment.yaml --validate=false
+kubectl apply -f ./backend-feed-deployment.yaml
 
 echo -e "${GREEN}==== Deploying RBAC role ====${NC}"
 cd ./rbac/
