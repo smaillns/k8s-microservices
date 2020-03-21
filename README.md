@@ -6,6 +6,10 @@ Standing up a kubernetes cluster on AWS using kops and Travis-CI as CI/CD Pipeli
 You can find the source code and the different Dockerfile in the directory **udagram-prject**
 
 #### Step1: Deploy the cluster
+that is how the cluster will look like
+
+![cluster image](https://github.com/smaillns/k8s-ci/blob/master/screeshots/cluster-diagram.png)
+
 
 Update and load the required environment variables:
 
@@ -79,15 +83,21 @@ Check more if the cluster is ready :
 kubectl get nodes
 ```
 
-that is how the cluster will look like
-![cluster image](https://github.com/smaillns/k8s-ci/blob/master/screeshots/cluster-diagram.png)
 
 
 
 #### Step2 : Configure the Travis-CI pipeline
 
+...
+Setup the account
+...
+Setup the environement variables from the Travis-CI console, under `project > settings`
+![travis-ci](screenshots/travis-env-variables)
+**Note** execute `cat ~/.kube/config` to get the values
+...
+check the different scripts 
 
-
+../..
 
 #### Clear All thing
 Remove the cluster 
@@ -101,6 +111,6 @@ terraform destroy
 ```
 
 
-`Note : The aim of this ReadMe file is just to give an idea on how our kubernetes cluster and CI/CD environment are stood up `
+`Note : The aim of this ReadMe file is just to give a general idea about how our kubernetes cluster and CI/CD environment are stood up `
 
-[pip](https://pip.pypa.io/en/stable/) 
+[Licence](https://github.com/smaillns) 
