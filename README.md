@@ -79,6 +79,8 @@ Check more if the cluster is ready :
 kubectl get nodes
 ```
 
+that is how the cluster will look like
+![cluster image](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
 
 
 
