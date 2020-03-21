@@ -80,7 +80,7 @@ kubectl get nodes
 ```
 
 that is how the cluster will look like
-![cluster image](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+![cluster image](https://github.com/smaillns/k8s-ci/blob/master/screeshots/cluster-diagram.png)
 
 
 
