@@ -96,7 +96,7 @@ Setup the account
 
 Setup the environement variables from the Travis-CI console, under `project > settings`
 
-![travis-ci](screenshots/travis-env-variables.jpeg)
+![travis-ci](https://github.com/smaillns/k8s-ci/blob/master/screeshots/travis-env-variables.jpeg)
 
 **Note** execute `cat ~/.kube/config` to get the values
 ...
