@@ -32,17 +32,17 @@ cd ../udagram-project/udagram-deployment/k8s
     echo -e "${GREEN}==== Done Deploying ${f} ====${NC}"
 
     echo -e "${GREEN}==== Creating services and deployments ====${NC}"
-    # kubectl apply -f reverseproxy-deployment.yaml --validate=false
-    # kubectl apply -f reverseproxy-service.yaml --validate=false
+    kubectl apply -f reverseproxy-deployment.yaml --validate=false
+    kubectl apply -f reverseproxy-service.yaml --validate=false
 
-    # kubectl apply -f backend-feed-deployment.yaml --validate=false
-    # kubectl apply -f backend-feed-service.yaml --validate=false
+    kubectl apply -f backend-feed-deployment.yaml --validate=false
+    kubectl apply -f backend-feed-service.yaml --validate=false
 
-    # kubectl apply -f backend-user-deployment.yaml --validate=false
-    # kubectl apply -f backend-user-service.yaml --validate=false
+    kubectl apply -f backend-user-deployment.yaml --validate=false
+    kubectl apply -f backend-user-service.yaml --validate=false
 
-    # kubectl apply -f frontend-deployment.yaml --validate=false
-    # kubectl apply -f frontend-service.yaml --validate=false
+    kubectl apply -f frontend-deployment.yaml --validate=false
+    kubectl apply -f frontend-service.yaml --validate=false
     echo -e "${GREEN}==== Done Deploying ${f} ====${NC}"
 
 
