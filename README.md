@@ -89,13 +89,20 @@ kubectl get nodes
 #### Step2 : Configure the Travis-CI pipeline
 
 ...
+
 Setup the account
+
 ...
+
 Setup the environement variables from the Travis-CI console, under `project > settings`
+
 ![travis-ci](screenshots/travis-env-variables)
+
 **Note** execute `cat ~/.kube/config` to get the values
 ...
+
 check the different scripts 
+
 
 ../..
 
