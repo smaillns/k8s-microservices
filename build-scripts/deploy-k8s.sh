@@ -26,9 +26,9 @@ cd ../udagram-project/udagram-deployment/k8s
     
 
     echo -e "${GREEN}==== Deploying secrets and configmaps ====${NC}"
-    kubectl apply aws-secret.yaml  --validate=false
-    kubectl apply env-secret.yaml  --validate=false
-    kubectl apply env-configmap.yaml  --validate=false
+    kubectl apply -f aws-secret.yaml  --validate=false
+    kubectl apply -f env-secret.yaml  --validate=false
+    kubectl apply -f env-configmap.yaml  --validate=false
     echo -e "${GREEN}==== Done Deploying ${f} ====${NC}"
 
     echo -e "${GREEN}==== Creating services and deployments ====${NC}"
